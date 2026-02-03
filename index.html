@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paintball – Tarifs & Réservation</title>
+<link href=" https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap " rel="stylesheet">
+<style>
+/* ===== Base ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+corps { police-family: 'Roboto', sans-serif; fond: #f4f4f4; couleur: #333; interligne: 1.6; }
+un { text-decoration: none; }
+h1,h2,h3 { font-weight: 700; }
+.container { max-width: 1100px; margin: auto; padding: 0 1rem; }
+
+/* ===== En-tête ===== */
+header { background: linear-gradient(90deg,#ff416c,#ff4b2b); color: #fff; text-align: center; padding: 3rem 1rem; }
+titre h1 { taille de police : 2,5 rem ; marge inférieure : 1 rem ; }
+en-tête p { taille de police : 1,2rem ; }
+
+/* ===== Titres des sections ===== */
+h2 { couleur : #ff4b2b ; marge : 2rem 0 1rem ; alignement du texte : centré ; }
+
+/* ===== Cartes ===== */
+.cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 1.5rem; margin: 2rem 0; }
+.carte {
+arrière-plan : #fff ;
+marge intérieure : 1,5 rem ;
+bordure-radius: 12px;
+box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+transition: transform 0.3s, box-shadow 0.3s;
+text-align: centre;
+}
+.card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+.card h3 { color: #ff4b2b; margin-bottom: 1rem; font-size: 1.5rem; }
+.card p { margin-bottom: 1rem; font-size: 1rem; }
+.btn { display: inline-block; background: #ff4b2b; color: #fff; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: bold; transition: background 0.3s; }
+.btn:hover { background: #ff416c; }
+
+/* ===== Tableaux ===== */
+tableau { largeur: 100%; bordure-réduction: réduction; marge: 1rem 0; }
+th, td { padding: 1rem; text-align: center; border: 1px solid #ddd; }
+th { background: #ff4b2b; color: #fff; font-size: 1.1rem; }
+td { font-size: 1rem; }
+@media (max-width: 600px) {
+th, td { padding: 0.5rem; font-size: 0.9rem; }
+}
+
+/* ===== Sections ===== */
+section { padding: 2rem 0; }
+.note { font-size: 0.9rem; color: #555; text-align: center; margin-top: 0.5rem; }
+
+/* ===== Pied de page ===== */
+pied de page { arrière-plan : #333; couleur : #fff; alignement du texte : centré; marge intérieure : 2rem 1rem; marge supérieure : 3rem; }
+pied de page p { taille de police : 0,9rem ; }
+
+/* ===== Animations ===== */
+.fade-in { opacité: 0; transform: translateY(20px); animation: fadeIn 1s forwards; }
+@keyframes fadeIn { to { opacité: 1; transform: translateY(0); } }
+</style>
+</head>
+<corps>
+
+<header>
+<h1>Paintball Extrême</h1>
+<p>Réservez votre partie unique et vivez l'aventure à fond !</p>
+<a href="#reservation" class="btn">Réserver Maintenant</a>
+</header>
+
+<div class="container">
+
+<!-- Section Enfants -->
+<section class="fade-in">
+<h2>👶 Enfants / Juniors (8-13 ans)</h2>
+<div class="cards">
+<div class="card">
+<h3>Partie Unique – 150 billets</h3>
+<p><strong>Prix :</strong> 33 €</p>
+<p><strong>Durée :</strong> 1h30</p>
+<p>Boisson offerte + équipement complet et encadrement inclus.</p>
+<a href="#reservation" class="btn">Réserver</a>
+</div>
+</div>
+</section>
+
+<!-- Rubrique Adolescents / Adultes -->
+<section class="fade-in">
+<h2>🧑 Adolescents / Adultes (13 ans et +)</h2>
+<table>
+<thead>
+<tr>
+<th>Emballez des billes</th>
+<th>Prix (€)</th>
+<th>Durée indic.</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>100 billes</td><td>30 €</td><td>~25 min</td></tr>
+<tr><td>200 billes</td><td>39 €</td><td>~35 min</td></tr>
+<tr><td>300 billes</td><td>47 €</td><td>~45 min</td></tr>
+<tr><td>400 billes</td><td>54 €</td><td>~1h30</td></tr>
+<tr><td>500 billes</td><td>60 €</td><td>~2h</td></tr>
+</tbody>
+</table>
+<p class="note">Équipement complet inclus. Temps de jeu prolongé possible avec achat de billets supplémentaires.</p>
+</section>
+
+<!-- Parcours Koh Lanta -->
+<section class="fade-in">
+<h2>🏆Parcours Koh Lanta</h2>
+<div class="cards">
+<div class="card">
+<h3>1 heure (+12 ans)</h3>
+<p><strong>Prix :</strong> 32 €</p>
+<a href="#reservation" class="btn">Réserver</a>
+</div>
+</div>
+</section>
+
+<!-- Formules Multi-Activités -->
+<section class="fade-in">
+<h2>🪂 Formules Multi‑Activités</h2>
+<div class="cards">
+<div class="card">
+<h3>8–13 ans</h3>
+<p>Paintball + Koh Lanta : 47 €</p>
+<a href="#reservation" class="btn">Réserver</a>
+</div>
+<div class="card">
+<h3>13–18 ans</h3>
+<p>Paintball + Koh Lanta : 53,50 €</p>
+<a href="#reservation" class="btn">Réserver</a>
+</div>
+<div class="card">
+<h3>Adultes (+18 ans)</h3>
+<p>Paintball + Koh Lanta : 57 €</p>
+<a href="#reservation" class="btn">Réserver</a>
+</div>
+</div>
+<p class="note">Option Carte Fidélité / Réduction : -20 % sur toutes les formules avec la carte spéciale.</p>
+</section>
+
+<!-- Section Réservation -->
+<section id="réservation" class="fade-in">
+<h2>📩 Réservation</h2>
+<p style="text-align:center;">Pour réserver votre partie, contactez-nous directement par téléphone ou email, ou utilisez notre formulaire en ligne !</p>
+<p style="text-align:center;"><a href="tel:+33000000000" class="btn">Appeler Maintenant</a></p>
+</section>
+
+</div>
+
+<footer>
+<p>&copie; 2026 Paintball Extrême. Tous droits réservés.</p>
+</footer>
+
+<script>
+// Animation d'apparition progressive au défilement
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+entrées.forEach(entrée => {
+si (!entrée.estIntersectante) retourner;
+entrée.cible.style.opacité = 1 ;
+entrée.cible.style.transform = 'translateY(0)';
+observer.désobserver(entrée.cible);
+});
+}, appearOptions);
+faders.forEach(fader => appearOnScroll.observe(fader));
+</script>
+
+</body>
+</html>
